@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f4e1474181.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <img src="img/logo.png" alt="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu"></i>
+    </nav>  
+<div id="header">
+    <video autoplay muted loop id="header-video">
+        <source src="coding.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+
+        <div class="header-text">
+            <p>FullStack Developer | Graphics Designer</p>
+            <h1>Hi, I'm <span>David Adeleke</span><br> From Nigeria</h1>
+        </div>
+    </div>
+</div>
+
+
+<!-- --------about--------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/user.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> I am a highly skilled and detail-oriented Backend Developer with a wealth of experience in Python, Django, and PHP, including Laravel. My expertise extends beyond programming languages to encompass a strong foundation in HTML and CSS, allowing me to craft seamless and engaging user interfaces. In addition to my technical proficiency, I possess a keen eye for UI/UX design, excelling in wireframing and prototyping to deliver user-friendly and aesthetically pleasing solutions.
+
+                    My proficiency in database management, coupled with a deep understanding of SQL and ORM, including tools like SQLAlchemy, enables me to create robust and efficient data-driven applications. I take pride in my problem-solving abilities, critical thinking, and collaborative approach, which I bring to the table as a valuable asset to any development team.
+                    
+                    Furthermore, my strong communication skills foster productive teamwork, and my commitment to effective time management ensures that projects are completed efficiently and on schedule. Together, we can embark on a journey to craft exceptional backend solutions that meet and exceed your expectations.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Back-end Development</span><br>Python | Django | Flask<br>PHP | Laravel<br>NodeJs | ExpressJs</li>
+                        <li><span>Front-End Development</span><br>HTML | CSS | JavaScript | React |
+                            Angular</li>
+                            <li><span>Database Management</span><br>SQL |
+                                ORM (e.g., SQLAlchemy)</li>
+                        <li><span>UI/UXDesign</span><br>Wireframing |
+                            Prototyping</li>
+                        <li><span>Graphics Design</span><br>Logo Design | Branding and Identity  | Poster design | Social Media Graphics</li>
+                
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>September 2023 - Current</span><br>Software Programming at Appclick Technologies Ltd</li>
+                        <li><span>July 2022 - September 2023</span><br>Python Programming at New Horizons</li>
+                        <li><span>March 2021 - July 2022</span><br>UI/UX design at Udemy</li>
+                        <li><span>July 2018 - Febuary 2021</span><br>Graphics design at Landmark University Entrepreneur Centre</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>Certificate in Backend Software Engineering<br>Appclick Technologies Ltd</li>
+                        <li><span>2022</span><br>Certificate in Python Programming<br>New Horizon</li>
+                        <li><span>2018</span><br>Landmark University</li>
+                        <li><span>2016</span><br>Goshen High School</li>
+                        <li><span>2013</span><br>Bethel Comprehensive High School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------Services--------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code fa-bounce"></i>
+                <h2>Full-Stack Development</h2>
+                <p><li>Offer end-to-end development services, handling both the front-end and back-end aspects of web applications.
+Utilize your skills in React, Angular, and other front-end technologies to build interactive and user-friendly interfaces.</li>
+                    
+                    <li>Database Management: Provide database design and management services using SQL databases.
+                        Utilize ORM (Object-Relational Mapping) tools like SQLAlchemy to simplify database interactions and enhance code maintainability.</li>
+                    
+                    <li>Web Application Development:
+                        Develop custom web applications tailored to clients' specific needs using your expertise in Python (Django, Flask), PHP (Laravel), and NodeJs (ExpressJs).
+                        Create dynamic and responsive user interfaces with HTML, CSS, and JavaScript.</li>
+                    <li>API Development:
+
+                        Design and implement RESTful APIs or GraphQL APIs using Python (Django, Flask), PHP (Laravel), or NodeJs (ExpressJs).
+                        Ensure secure and efficient communication between the front-end and back-end systems.</li></p>    
+                    <a href="www.linkedin.com/in/david-adeleke-062190293">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pen-nib fa-bounce"></i>
+                <h2>Graphics Designer</h2>
+                <p><li>Logo Design:
+                    Creating unique and memorable logos that represent a brand's identity.</li>
+                    <li>Branding and Identity:
+                    Developing visual identities, including color schemes, typography, and brand guidelines.</li>
+                    <li>Print Design:
+                    Designing materials for print, such as business cards, brochures, and posters.</li>
+                    <li>Digital Illustrations:
+                    Creating digital illustrations for various purposes, including marketing materials.</li>
+                    <li>Packaging Design:
+                    Designing attractive and functional packaging for products.</li>
+                    <li>Social Media Graphics:
+                    Developing graphics for social media platforms to enhance online presence.</li>
+                    <li>User Interface (UI) Design:
+                    Creating visually appealing and intuitive interfaces for websites and applications.</li></p>
+                    <a href="www.linkedin.com/in/david-adeleke-062190293">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop fa-bounce"></i>
+                <h2>UI/UX Designer</h2>
+                <p><li>User Research:
+                    Conducting user research to understand user needs and preferences.</li>
+                    <li>Wireframing and Prototyping:
+                    Creating wireframes and interactive prototypes to visualize and test designs.</li>
+                    <li>User Interface (UI) Design:
+                    Designing the visual elements of the user interface for websites and applications.</li>
+                    <li>User Experience (UX) Design:
+                    Ensuring a seamless and enjoyable user experience throughout the product.</li></p>
+                    <a href="www.linkedin.com/in/david-adeleke-062190293">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------portfolio-------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="'sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/image3.jpg">
+                <div class="layer">
+                    <h3>Greek Burger App with Python</h3>
+                    <p>The app helps you order burger in a easy way and it's connected to a database to fetch all orders and to deliver.</p>
+                    <a href="https://github.com/Timmydavid123/Greek-Burger"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/Davtevh studio logo.png">
+                <div class="layer">
+                    <h3>Logo Design</h3>
+                    <p>I designed a logo for myself and made it 3d</p>
+                    <a href="https://drive.google.com/drive/home"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/PHP.jpg">
+                <div class="layer">
+                    <h3>PHP backened</h3>
+                    <p>I am working on a test-app with laravel</p>
+                    <a href="https://github.com/Timmydavid123/schoolmanagement-app"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Timmydavid123" class="btn">See more</a>
+    </div>
+</div>
+<!-- ------Contact----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> adeleketimileyin11@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 09043658286</p>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/timileyin.adeleke.5439/"><i class="fa-brands fa-facebook fa-beat"></i></a>
+                    <a href="https://www.instagram.com/tee_me2/"><i class="fa-brands fa-instagram fa-beat"></i></a>
+                    <a href="https://www.linkedin.com/in/david-adeleke-062190293/"><i class="fa-brands fa-linkedin fa-beat"></i></a>
+                    <a href="https://twitter.com/AdelekeDavidTi2"><i class="fa-brands fa-twitter-square fa-beat"></i></a>
+                </div>
+                <a href="img/My-Cv.pdf" download class="btn btn2">Download CV</a>   
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright fa-bounce"></i> 2023 by DaveTevh Studio | All right reserved</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link"); 
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "o";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbygAVCxV2r3mCUO6PKtsOQKRxTdcnEiV-XA6T-yI-S0YcyHD9s1u_wOoDS_F3_op_62iQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
