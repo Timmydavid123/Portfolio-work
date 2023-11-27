@@ -6,19 +6,23 @@
     <title>David Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f4e1474181.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+
+
 </head>
 <body>
     <nav>
-        <img src="img/logo.png" alt="logo">
+        <a href="#"><h2 id="changingText">Davtevh_Studio..</h2></a>
         <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
-            <i class="fas fa-times" onclick="closemenu"></i>
+            <i class="fas fa-times" onclick="closemenu()"></i>
         </ul>
-        <i class="fas fa-bars" onclick="openmenu"></i>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
     </nav>  
 <div id="header">
     <video autoplay muted loop id="header-video">
@@ -28,9 +32,9 @@
     <div class="container">
 
         <div class="header-text">
-            <p>FullStack Developer | Graphics Designer</p>
+            <p>I'm <span class="typed" data-typed-items="Full-Stack Developer, Designer, Freelancer"></span></p>
             <h1>Hi, I'm <span>David Adeleke</span><br> From Nigeria</h1>
-        </div>
+        </div>`
     </div>
 </div>
 
@@ -44,11 +48,8 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p> I am a highly skilled and detail-oriented Backend Developer with a wealth of experience in Python, Django, and PHP, including Laravel. My expertise extends beyond programming languages to encompass a strong foundation in HTML and CSS, allowing me to craft seamless and engaging user interfaces. In addition to my technical proficiency, I possess a keen eye for UI/UX design, excelling in wireframing and prototyping to deliver user-friendly and aesthetically pleasing solutions.
-
-                    My proficiency in database management, coupled with a deep understanding of SQL and ORM, including tools like SQLAlchemy, enables me to create robust and efficient data-driven applications. I take pride in my problem-solving abilities, critical thinking, and collaborative approach, which I bring to the table as a valuable asset to any development team.
-                    
-                    Furthermore, my strong communication skills foster productive teamwork, and my commitment to effective time management ensures that projects are completed efficiently and on schedule. Together, we can embark on a journey to craft exceptional backend solutions that meet and exceed your expectations.</p>
+                <p> 
+                    Hello! I'm David Adeleke, a versatile and results-driven developer skilled in back-end technologies like Python (Django, Flask), PHP (Laravel), and NodeJs (ExpressJs). On the front end, I excel in HTML, CSS, and JavaScript, with expertise in React and Angular. My database management proficiency includes SQL and ORM (e.g., SQLAlchemy). I bring a user-centric approach to projects with UI/UX design, including wireframing and prototyping. Additionally, I have a knack for graphics design, covering logo design, branding, posters, and social media graphics. Let's collaborate to bring your ideas to life!</p>
                 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -171,9 +172,9 @@ Utilize your skills in React, Angular, and other front-end technologies to build
             <div class="work">
                 <img src="img/PHP.jpg">
                 <div class="layer">
-                    <h3>PHP backened</h3>
-                    <p>I am working on a test-app with laravel</p>
-                    <a href="https://github.com/Timmydavid123/schoolmanagement-app"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
+                    <h3>Health care Chatbot with NodeJs</h3>
+                    <p>I worked on the backend part in this HealthCare Chatbot</p>
+                    <a href="https://github.com/tolu-c/HealthGPT/tree/backendserver-de/backend"><i class="fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></a>
                 </div>
             </div>
         </div>
@@ -187,7 +188,7 @@ Utilize your skills in React, Angular, and other front-end technologies to build
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
                 <p><i class="fa-solid fa-paper-plane"></i> adeleketimileyin11@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i> 09043658286</p>
+                <p><i class="fa-solid fa-phone"></i> +2349043658286</p>
                 <div class="social-icons">
                     <a href="https://web.facebook.com/timileyin.adeleke.5439/"><i class="fa-brands fa-facebook fa-beat"></i></a>
                     <a href="https://www.instagram.com/tee_me2/"><i class="fa-brands fa-instagram fa-beat"></i></a>
@@ -234,7 +235,7 @@ Utilize your skills in React, Angular, and other front-end technologies to build
     var sidemenu = document.getElementById("sidemenu");
 
     function openmenu(){
-        sidemenu.style.right = "o";
+        sidemenu.style.right = "0";
     }
     function closemenu(){
         sidemenu.style.right = "-200px";
@@ -257,6 +258,42 @@ Utilize your skills in React, Angular, and other front-end technologies to build
         })
         .catch(error => console.error('Error!', error.message))
     })
+  </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Typed.js
+    var typed = new Typed('.typed', {
+      strings: ['Full-Stack Developer', 'Designer', 'Freelancer'],
+      typeSpeed: 50, // Adjust the typing speed if needed
+      backSpeed: 30, // Adjust the backspacing speed if needed
+      loop: true, // Set to true if you want the text to loop
+    });
+  });
+</script>
+<script>
+    // Get the element by ID
+    const changingText = document.getElementById('changingText');
+
+    // Function to generate a random color
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    // Function to change the color after a specified time
+    function changeColor() {
+      setInterval(() => {
+        const randomColor = getRandomColor();
+        changingText.style.color = randomColor;
+      }, 10000); 
+    }
+
+    // Call the function to initiate color change
+    changeColor();
   </script>
 </body>
 </html>
