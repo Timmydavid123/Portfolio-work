@@ -37,6 +37,8 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: fixed;
+    
 }
 a {
     text-decoration: none;
@@ -53,10 +55,12 @@ a {
   }
 
 nav ul li{
-    display: inline-block;
+    display: inline;
     list-style: none;
     margin: 10px 20px;
     margin-bottom: 60px;
+    
+    
 
 }
 
@@ -64,7 +68,7 @@ nav ul li a{
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    position: relative;
+    
 }
 
 nav ul li a::after{
